@@ -212,8 +212,9 @@
   /*  Home  */
   .home {
     display: flex;
-    background: url("https://images.unsplash.com/photo-1516721306533-364eee523197") no-repeat
-    center;
+    background-color: black ;
+    /* background: url("https://images.unsplash.com/photo-1516721306533-364eee523197") no-repeat */
+    /* center; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -254,6 +255,12 @@
   .home .home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
+  }
+
+  .home .home-content .left p {
+    text-align: justify;
+    font-size: 20px;
+    width: 70%;
   }
   
   /* Linear Gradient */
