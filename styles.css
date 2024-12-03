@@ -229,9 +229,16 @@
     height: 500px;
     width:500px;
     margin: 50px;
-    /* object-fit: cover; */
-    border-radius: 6px;
+   
   }
+  .profile-pic{
+    width: 500px;
+    height: 500px;
+    border-radius: 10%;
+    margin-bottom: 30px;
+  }
+
+
   
   .home .max-width {
     width: 100%;
@@ -257,10 +264,10 @@
     margin: 5px 0;
   }
 
-  .home .home-content .left p {
+  .home .home-content .description p {
     text-align: justify;
     font-size: 20px;
-    width: 70%;
+    width: 100%;
   }
   
   /* Linear Gradient */
@@ -419,6 +426,7 @@
     background: radial-gradient(#e1efff, white);
   }
   .skills .title::after {
+    /* padding-top: 10%; */
     content: "—What I Know ?—";
   }
   
