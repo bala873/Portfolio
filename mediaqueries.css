@@ -88,17 +88,22 @@
   }
 
   @media (max-width: 768px) { 
-    .profile-container { 
-      background-image: none;
-      background-size: cover;
+    .pic-container {
+      width: 500px; 
+      height: 500px; 
+      background-image: url('/images/profile.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      padding: 50px; 
+      border-radius: 10px; 
     } 
     .profile-pic {
-      display: none; 
-    } 
+     display: none; 
+    }
     .description {
       background: rgba(255, 255, 255, 0.8); 
       padding: 20px; 
-      /* width: 100%; */
+      width: 100%;
       border-radius: 10px; 
     } 
   }
@@ -121,9 +126,11 @@
     }
   }
   
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
 
-    .profile-container { 
+    .pic-container { 
+      width: 300px; 
+      height: 300px; 
       background-image: none; 
       
     } 
