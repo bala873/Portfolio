@@ -9,6 +9,12 @@
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("6vJyr__enDQlP0OTa");
+        })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -93,6 +99,8 @@
                 <li class="project"><Strong>Portfolio</Strong> (HTML, CSS, js, Bootstraps)</li>
                 <li class="project"><Strong>Job Portal Application</Strong> (Springboot 3, Spring MVC, Spring Security, Thymeleaf, Hibernate/JPA, MySQL, HTML, CSS)</li>
                 <li class="project"><strong>Banking Application</strong> (Springboot 3, Spring JPA, MySQL)</li>
+                <li class="project"><Strong>Weather Application</Strong> (HTML, CSS, js,Spring Boot 3 and Spring MVC)</li>
+                <li class="project"><Strong>Real Time Chat Application</Strong> (HTML, CSS, js,Spring Boot, Spring MVC,Spring Security, Thymeleaf, Hibernate/JPA, and MySQL)</li>
                  
               </p>
 
@@ -167,19 +175,16 @@
             <div class="card">
               <div class="box">
                 <img src="/images/JobPortal.jpeg" alt="Job Portal">
-                <div class="text">Job Portal Application</div>
-                <p> Developed a comprehensive job portal 
-                  web application using Spring Boot 3, Spring MVC, 
-                  Thymeleaf, Hibernate/JPA, and MySQL. 
-                  Implemented features such as user registration, 
-                  login/logout, job postings, and application 
-                  management.</p>
+                <div class="text">Job Portal Application </div>
+                <a href="https://github.com/bala873/jobportal" style="color: rgb(195, 198, 243); text-decoration: none; font-weight: bold;"> Source code</a> 
+                <p> Developed a comprehensive job portal web application using Spring Boot 3, Spring MVC, Thymeleaf, Hibernate/JPA, and MySQL.Implemented features such as user registration, login/logout, job postings, and application management.</p>
               </div>
             </div>
             <div class="card">
               <div class="box">
                 <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="my portfolio">
                 <div class="text">Portfolio</div>
+                <a href="https://github.com/bala873/Portfolio" style="color: rgb(195, 198, 243); text-decoration: none; font-weight: bold;"> Source code</a> 
                 <p>Developed a personal portfolio website using HTML, CSS, JavaScript, and Bootstrap. The portfolio showcases my skills, projects, and contact information, providing a comprehensive overview of my capabilities as a software developer.</p>
               </div>
             </div>
@@ -187,6 +192,7 @@
               <div class="box">
                 <img src="/images/Banking_App.jpeg" alt="Banking Application">
                 <div class="text">Banking Application</div>
+                <a href="https://github.com/bala873/BankingApplication/tree/master/banking-app" style="color: rgb(195, 198, 243); text-decoration: none; font-weight: bold;"> Source code</a> 
                 <p>Developed a comprehensive banking application using Spring Boot 3, Spring Data JPA (Hibernate), and MySQL. Implemented REST APIs for core banking functionalities, including user registration, account management, transactions, and reporting.</p>
               </div>
             </div>
@@ -194,7 +200,16 @@
               <div class="box">
                 <img src="/images/WeatherApp.jpeg" alt="WeatherApp">
                 <div class="text">Weather Application</div>
+                <a href="https://github.com/bala873/weatherApplication/tree/master/monitor" style="color: rgb(195, 198, 243); text-decoration: none; font-weight: bold;"> Source code</a> 
                 <p>Developed a comprehensive weather application using Spring Boot 3 and Spring MVC. Implemented REST APIs for core weather functionalities, including real-time weather updates, forecasts, and weather alerts.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="box">
+                <img src="/images/Chat Application.png" alt="ChatApp">
+                <div class="text">Real Time Chat Application</div>
+                <a href="https://github.com/bala873/-EazyByts/tree/master/%20EazyByts" style="color: rgb(195, 198, 243); text-decoration: none; font-weight: bold;"> Source code</a> 
+                <p>Developed a real-time chat application using Spring Boot, Spring MVC, Thymeleaf, Hibernate/JPA, and MySQL. Implemented features such as user registration, login/logout, private messaging, and notification system.</p>
               </div>
             </div>
             
@@ -263,24 +278,24 @@
             <!-- Reach -->
             <div class="column right">
               <div class="text">Message me</div>
-              <form action="#">
-                <div class="fields">
-                  <div class="field name">
-                    <input type="text" placeholder="Your Name" required>
+              <form id="contact-form" action="#">
+                  <div class="fields">
+                      <div class="field name">
+                          <input type="text" name="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="field email">
+                          <input type="email" name="email" placeholder="Your Email" required>
+                      </div>
                   </div>
-                  <div class="field email">
-                    <input type="email" placeholder="Your Email" required>
+                  <div class="field">
+                      <input type="text" name="subject" placeholder="Subject" required>
                   </div>
-                </div>
-                <div class="field">
-                  <input type="text" placeholder="Subject" required>
-                </div>
-                <div class="field textarea">
-                  <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                </div>
-                <div class="button-area">
-                  <button type="submit">Send message</button>
-                </div>
+                  <div class="field textarea">
+                      <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
+                  </div>
+                  <div class="button-area">
+                      <button type="submit">Send message</button>
+                  </div>
               </form>
             </div>
           </div>
@@ -293,6 +308,42 @@
           <a href="#"> Manikandan V</a> | <span class="far fa-copyright"></span> 2024 All Rights Reserved. Privacy Policy
         </span>
       </footer>
+    </div>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            document.querySelector('#contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                
+
+
+                const name = document.querySelector('input[name="name"]').value;
+                const email = document.querySelector('input[name="email"]').value;
+                const subject = document.querySelector('input[name="subject"]').value;
+                const message = document.querySelector('textarea[name="message"]').value;
+
+          
+
+                const templateParams = {
+                    from_name: name,
+                    from_email: email,
+                    subject: subject,
+                    message: message
+                };
+
+            
+
+                emailjs.send('service_alsh1rf', 'template_pmzt1ps', templateParams)
+                    .then(function(response) {
+                        
+                        alert('Message sent successfully!');
+                    }, function(error) {
+
+                        alert('Failed to send message. Please try again.');
+                    });
+            });
+        });
+    </script>
       <script src='https://kit.fontawesome.com/3b57a2a2a7.js'></script>
 <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js'></script>
